@@ -1,0 +1,246 @@
+
+
+
+*, 
+*::before, 
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class], 
+ol[class] {
+  padding: 0;
+  list-style: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Jost', sans-serif;
+  font-size: 16px;
+  color: #213632;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button:focus {
+  outline: none;
+}
+
+a {
+  color: #213632;
+  transition: all .2s linear;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.section {
+  margin: 70px 0 0;
+  padding: 30px 15px 0;
+}
+
+.content-wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1280px;
+  scroll-behavior: smooth;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 10px;
+  height: 480px;
+  background-image: url(./images/background-image.jpeg);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+
+  & li {
+    margin: 0 15px 0 0;
+    font-size: 18px;
+
+    & a {
+
+      &:hover {
+        color: $menu-color-hover;
+      }
+    }
+  }
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 640px;
+  height: 50%;
+  background-color: $timer-background-color;
+  border-radius: 5px;
+  color: $timer-color;
+
+  & span {
+    font-size: 56px;
+    font-weight: 800;
+    color: $timer-color!important;
+  }
+}
+
+.title {
+  margin: 40px 0 0;
+  text-align: center;
+  color: $title-color;
+
+  & h1 {
+    font-size: 42px;
+  }
+
+  & p {
+    font-weight: 500;
+  }
+}
+
+.subtitle {
+  font-size: 32px;
+  text-align: center;
+  color: $subtitle-color;
+}
+
+.registration-button {
+
+  & div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 250px;
+      height: 50px;
+      text-transform: uppercase;
+      font-size: 18px;
+      color: $button-registration-color;
+      background-color: $button-registration-background;
+      border-radius: 3px;
+
+      &:hover {
+        background-color: $button-registration-background-hover;
+      }
+    }
+  }
+}
+
+.conference-program {
+  & h2 {
+    margin: 0 0 30px;
+    
+  }
+  & div {
+    margin: 0 0 20px;
+    text-align: center;
+  }
+}
+
+.footer {
+  margin: 70px 0 0;
+  padding: 50px 15px 0;
+  border-top: 2px solid $footer-border-color;
+
+    & h3 {
+      margin: 0 0 20px;
+      text-align: center;
+    }
+
+  & div {
+    margin: 0 0 20px;
+  }
+
+  & a {
+
+    &:hover {
+      color: $author-color-hover;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    justify-content: space-around;
+
+
+    & div {
+      margin: 0 20px 0 0;
+
+      &:not(:last-of-type) {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    &-social {
+
+      & svg {
+        fill: $social-color;
+        transition: fill .2s linear;
+      }
+
+      & a {
+
+        &:hover svg {
+         fill: $social-color-hover;
+        }
+      }
+    }
+  }
+
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__age-limit {
+    font-size: 56px;
+    font-family: 'Comfortaa', cursive;
+    color: $footer-age-limit-color;
+  }
+
+  &__author {
+    padding: 30px 0 10px;
+    font-size: 14px;
+    text-align: right;
+  }
+}
