@@ -1,0 +1,23 @@
+.slick-track {
+  display: flex;
+  align-items: center;
+}
+
+.slick-dots {
+
+  & li {
+    width: 10px;
+    height: 10px;
+    background-color: $slider-dots-background-color;
+    border-radius: 50%;
+    transition: all .2 linear;
+
+    &:hover {
+      background-color: $slider-dots-background-color-hover;
+    }
+
+    &.slick-active {
+      background-color: $slider-dots-active-background-color;
+    }
+  }
+}

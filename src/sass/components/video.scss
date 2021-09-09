@@ -1,0 +1,28 @@
+.video {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+
+	& h2 {
+		margin: 0 0 30px;
+	}
+
+	& div {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		padding-bottom: 56.25%;
+		height: 0;
+		width: 100%;
+
+		& iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: 5px;
+		}
+	}
+}

@@ -1,0 +1,18 @@
+.question-button {
+	display: flex;
+	justify-content: center;
+
+	& .button {
+		justify-content: space-evenly;
+		background-color: $button-question-background;
+		color: $button-question-color;
+
+		&:hover {
+			background-color: $button-question-background-hover;
+		}
+
+		& svg {
+			fill: $button-question-color; 
+		}
+	}
+}
